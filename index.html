@@ -2,7 +2,7 @@
 <html lang="zh-hans">
 <head>
     <meta charset="UTF-8">
-    <title>为知搜</title>
+    <title>筆記全文檢索</title>
     <link rel="stylesheet" href="static/vendors/element-ui/index.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link href="static/css/fontello.css" rel="stylesheet"/>
@@ -22,7 +22,7 @@
             <div class="main-content">
                 <div v-loading="loading">
                     <div style="margin: 15px auto; max-width: 800px;">
-                        <el-input placeholder="请输入关键字" v-model="keyword" @keyup.enter.native="search()"
+                        <el-input placeholder="請輸入關鍵字" v-model="keyword" @keyup.enter.native="search()"
                                   class="input-with-select">
                             <el-button slot="append" icon="el-icon-search" @click="search()"></el-button>
                         </el-input>
@@ -54,14 +54,14 @@
                         </div>
 
                         <div v-show="hasSearch && total <= 0 && !loading" style="text-align: center; margin: 20px auto">
-                            <span style="color: #e6a23c;padding: 8px 30px;border-radius: 4px;">未搜索到数据</span>
+                            <span style="color: #e6a23c;padding: 8px 30px;border-radius: 4px;">查無資料</span>
                         </div>
                     </div>
                 </div>
             </div>
         </el-main>
         <el-footer style="margin: 20px auto">
-            <p>&copy; 2019 <span class="icon-code"></span> with <span class="icon-heart heart"></span> by restran</p>
+            <p>&copy; 2019 Wiz.Search <span class="icon-heart heart"></span> by restran</p>
         </el-footer>
     </el-container>
 </div>

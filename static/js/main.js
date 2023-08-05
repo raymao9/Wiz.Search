@@ -53,7 +53,7 @@ new QWebChannel(qt.webChannelTransport, async function(channel) {
         data: function () {
             return {
                 keyword: '',
-                siteName: '为知搜',
+                siteName: '筆記全文檢索',
                 hasInit: false,
                 hasSearch: false,
                 total: 0,
@@ -109,7 +109,7 @@ new QWebChannel(qt.webChannelTransport, async function(channel) {
             },
             handleCurrentChange: function (val) {
                 this.currentPage = val;
-                console.log(`当前页: ${val}`);
+                console.log(`目前頁: ${val}`);
                 this.loadPageList(val);
             },
             showErrorMsg: function (e) {
